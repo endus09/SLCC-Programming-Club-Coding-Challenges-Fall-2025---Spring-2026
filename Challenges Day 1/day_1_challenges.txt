@@ -1,0 +1,42 @@
+EASY CHALLENGE:
+
+Even or Odd
+By Markus Gulla
+
+Hello everyone!!!! Welcome to the first programming challenge of the club!
+In today's challenge, you will be creating a function that receives an integer as an argument and returns 
+"Even" for even numbers and "Odd" for odd numbers. 
+
+Once you have programmed the solution, test your function on these numbers:
+
+13   - returns ODD
+0    - returns EVEN
+2    - returns EVEN
+57   - returns ODD
+578  - returns EVEN
+
+______________________________________________________________________________________________________________
+
+HARD CHALLENGE:
+
+Valid Phone Number
+by Markus Gulla
+ 
+Hello everyone!!!! Welcome to the first programming challenge of the club!
+In today's challenge, you will be creating a function that receives a string, and returns true if it is in the form of a phone number.
+Assume that any integer from 0 to 9 in any of the spots will produce a valid phone number.
+
+Here is the following format:
+ 
+     (123) 456-7890
+
+Do not forget the space after the closed parentheses!
+
+Once you have programmed the solution, test your function on these Strings:
+
+"(1234) 213-5543";  - returns false
+"(123)-456-7890";   - returns false
+"Hello world";      - returns false
+"(123) 456-78901";  - returns false
+"(321) 654-9870";   - returns true
+"(123) 456-7890";   - returns true

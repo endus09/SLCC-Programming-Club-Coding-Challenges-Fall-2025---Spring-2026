@@ -1,0 +1,26 @@
+Day 1 Easy Solution:
+
+- def even_or_odd(x):
+-     # WRITE YOUR CODE HERE
+-     if x%2 != 0:
+-         return "ODD"
+-     else:
+-         return "EVEN"
+
+ValidPhoneNumber Solution:
+
+public static boolean validPhoneNumber(String phoneNumber){
+    // set up pattern:
+    //	- "\\(" 	Start With Only "("
+    //	- "\\d{3}" 	Then Expect 3 Digits
+    //	- "\\)" 	Then Expect Only ")"
+    //	- "\\s" 	Then Expect Only 1 White Space Character(May Need To Change To Only Expect A Space)
+    //	- "\\d{}" 	Then Expect 3 More Digits
+    //	- "-" 	    Then Expect Only A Dash
+    // 	- "\\d{4}" 	Then Expect 4 More Digits
+    // 	- "$" 		Then Expect An End Of Line 
+    Pattern pattern = Pattern.compile("\\(\\d{3}\\)\\s\\d{3}-\\d{4}$");
+    // Make Sure There Is No Leading Or Trailing Spaces, Just In Case
+    Matcher matcher = pattern.matcher(phoneNumber.strip());
+    return matcher.find();
+}

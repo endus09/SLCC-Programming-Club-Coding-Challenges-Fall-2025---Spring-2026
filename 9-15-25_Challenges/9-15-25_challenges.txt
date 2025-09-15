@@ -20,7 +20,7 @@ ________________________________________________________________________________
 HARD CHALLENGE:
 
 Valid Phone Number
-by Markus Gulla & Bryson 
+by Markus Gulla & Bryson Crader
  
 Hello everyone!!!! Welcome to the first programming challenge of the club!
 In today's challenge, you will be creating a function that receives a string, and returns true if it is in the form of a phone number.

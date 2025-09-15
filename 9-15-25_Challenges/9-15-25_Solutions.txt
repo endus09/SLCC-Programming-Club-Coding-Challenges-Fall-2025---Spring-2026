@@ -1,0 +1,61 @@
+Even or Odd Solution:
+
+- def even_or_odd(x):
+-     # WRITE YOUR CODE HERE
+-     if x%2 != 0:
+-         return "ODD"
+-     else:
+-         return "EVEN"
+
+ValidPhoneNumber Solution:
+
+public static boolean validPhoneNumber(String phoneNumber){
+    // set up pattern:
+    //	- "\\(" 	Start With Only "("
+    //	- "\\d{3}" 	Then Expect 3 Digits
+    //	- "\\)" 	Then Expect Only ")"
+    //	- "\\s" 	Then Expect Only 1 White Space Character(May Need To Change To Only Expect A Space)
+    //	- "\\d{}" 	Then Expect 3 More Digits
+    //	- "-" 	    Then Expect Only A Dash
+    // 	- "\\d{4}" 	Then Expect 4 More Digits
+    // 	- "$" 		Then Expect An End Of Line 
+    Pattern pattern = Pattern.compile("\\(\\d{3}\\)\\s\\d{3}-\\d{4}$");
+    // Make Sure There Is No Leading Or Trailing Spaces, Just In Case
+    Matcher matcher = pattern.matcher(phoneNumber.strip());
+    return matcher.find();
+}
+
+
+Valid Phone Number C Solution:
+
+
+#include <stdbool.h>
+
+bool valid_phone_number(const char* number) {
+
+    if(number[0] != '(') {return false;}
+  
+    for(int i = 1; i < 4; i++)
+    {
+      if(number[i] < '0' || number[i] > '0' + 9){return false;}
+    }
+  
+    if(number[4] != ')' || number[5] != ' ') {return false;}
+  
+    for(int i = 6; i < 9; i++)
+    {
+      if(number[i] < '0' || number[i] > '0' + 9){return false;}
+    }
+  
+    if(number[9] != '-') {return false;}
+    
+    for(int i = 10; i < 14; i++)
+    {
+      if(number[i] < '0' || number[i] > '0' + 9){return false;}
+    }
+  
+    if(number[14] != '\0') {return false;}
+  
+    return true;
+
+}

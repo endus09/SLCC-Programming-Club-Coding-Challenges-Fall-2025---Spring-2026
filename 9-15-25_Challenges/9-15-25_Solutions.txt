@@ -1,4 +1,4 @@
-Day 1 Easy Solution:
+Even or Odd Solution:
 
 - def even_or_odd(x):
 -     # WRITE YOUR CODE HERE

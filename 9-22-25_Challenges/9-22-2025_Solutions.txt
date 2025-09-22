@@ -1,0 +1,90 @@
+Student Grades Solution:
+
+def student_grades(student_one, score_one, student_two, score_two):
+    # WRITE YOUR CODE HERE
+    grade_one = ""
+    grade_two = ""
+
+    if score_one > 89:
+        grade_one = "A"
+    elif score_one > 79:
+        grade_one = "B"
+    elif score_one > 69:
+        grade_one = "C"
+    elif score_one > 59:
+        grade_one = "D"
+    else:
+        grade_one = "F"
+
+    if score_two > 89:
+        grade_two = "A"
+    elif score_two > 79:
+        grade_two = "B"
+    elif score_two > 69:
+        grade_two = "C"
+    elif score_two > 59:
+        grade_two = "D"
+    else:
+        grade_two = "F"
+
+    if score_one > score_two:
+        print("1. " + student_one + ": " + grade_one + "\n2. " + student_two + ": " + grade_two)
+    else:
+        print("1. " + student_two + ": " + grade_two + "\n2. " + student_one + ": " + grade_one)
+    return
+
+
+--------------------------------------------------------------------------------------------------------
+
+Peaks Solution:
+
+   public static void is_peak(int[][] x){
+        // WRITE YOUR CODE HERE
+        int rows = x.length;
+        int columns = x[0].length;
+        int peaks = 0;
+        int[][] truthGrid = new int[rows][columns];
+        int[][] grid = new int[rows + 2][columns + 2];
+
+        for(int i = 1; i < rows + 1; i++)
+        {
+            for(int j = 1; j < columns + 1; j++)
+            {
+                grid[i][j] = x[i-1][j-1];
+            }
+        }
+
+        for(int i = 1; i < rows + 1; i++)
+        {
+            for(int j = 1; j < columns + 1; j++)
+            {
+                if(grid[i][j] > grid[i-1][j] 
+                && grid[i][j] > grid[i-1][j-1] 
+                && grid[i][j] > grid[i][j-1] 
+                && grid[i][j] > grid[i+1][j-1] 
+                && grid[i][j] > grid[i+1][j] 
+                && grid[i][j] > grid[i-1][j+1] 
+                && grid[i][j] > grid[i][j+1] 
+                && grid[i][j] > grid[i+1][j+1])
+                {
+                    truthGrid[i-1][j-1] = 1;
+                    peaks++;
+                }
+            }
+        }
+
+        System.out.println(peaks);
+        for(int i = 0; i < rows; i++)
+        {
+            for(int j = 0; j < columns; j++)
+            {
+                if(truthGrid[i][j] == 1)
+                {
+                    System.out.println(i + " " + j);
+                }
+            }
+        }
+
+    }
+
+--------------------------------------------------------------------------------------------------------

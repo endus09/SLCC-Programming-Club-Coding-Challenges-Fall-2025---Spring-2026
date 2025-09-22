@@ -59,3 +59,25 @@ bool valid_phone_number(const char* number) {
     return true;
 
 }
+
+bool validPhoneNumber(const char* phoneNumber){
+    
+    if (strlen(phoneNumber) != 14) return false;
+
+    char firstP = phoneNumber[0];
+    if (firstP != '(') return false;
+
+    char secondP = phoneNumber[4];
+    if (secondP != ')') return false;
+
+    char space = phoneNumber[5];
+    if (space != ' ') return false;
+
+    char number[11];
+    number[10] = '\0';
+    strncpy(number, phoneNumber+1, 3);
+    strncpy(number+3, phoneNumber+6, 3);
+    strncpy(number+6, phoneNumber+10, 4);
+
+    return atol(number) > 0;
+}

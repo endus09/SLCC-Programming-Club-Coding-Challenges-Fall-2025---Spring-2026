@@ -56,7 +56,7 @@ public class peaks {
     }
 
     public static void test(int[][] x, String t){
-         System.out.println("Your Answer:\n");
+         System.out.println("Your Answer:");
          is_peak(x);
          System.out.println("\nExpected:\n" + t + "\n");
     }

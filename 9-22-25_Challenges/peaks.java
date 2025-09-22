@@ -51,8 +51,12 @@ public class peaks {
             {1,3,1,4,1}};
         String bExpected = "5\n0 4\n1 0\n2 2\n4 1\n4 3";
 
+        int[][] c ={{1}};
+        String cExpected = "1\n0 0";
+
         test(a,aExpected);
         test(b,bExpected);
+        test(c,cExpected);
     }
 
     public static void test(int[][] x, String t){

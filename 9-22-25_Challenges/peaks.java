@@ -54,9 +54,13 @@ public class peaks {
         int[][] c ={{1}};
         String cExpected = "1\n0 0";
 
+        int[][] d = {{1,1}};
+        String dExpected = "0";
+
         test(a,aExpected);
         test(b,bExpected);
         test(c,cExpected);
+        test(d, dExpected);
     }
 
     public static void test(int[][] x, String t){

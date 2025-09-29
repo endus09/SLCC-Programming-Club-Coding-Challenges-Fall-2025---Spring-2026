@@ -1,0 +1,26 @@
+Twice as Old Solution:
+
+def twice_as_old(father_age, son_age):
+    if son_age * 2 > father_age:
+        print((son_age*2) - father_age)
+    else:
+        print(father_age - (son_age*2))
+    return
+
+---------------------------------------------
+Square Matrix Multiplication Solution:
+
+private static int[][] solution(int[][] a, int[][] b) {
+
+	int n = a.length;
+	int[][] c = new int[n][];
+	for (int i = 0; i < n; i++) {
+		c[i] = new int[n];
+		for (int j = 0; j < n; j++) {
+			for (int k = 0; k < n; k++) {
+				c[i][j] += a[i][k] * b[k][j];
+			}
+		}
+	}
+	return c;
+}

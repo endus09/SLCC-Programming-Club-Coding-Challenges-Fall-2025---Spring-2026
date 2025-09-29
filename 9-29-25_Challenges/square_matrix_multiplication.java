@@ -19,7 +19,7 @@
 
 public class square_matrix_multiplication {
 
-	private static int[][] solution(int[][] a, int[][] b) {
+	private static int[][] dotProduct(int[][] a, int[][] b) {
 		// WRITE YOUR CODE HERE
 		return null;
 	}
@@ -50,7 +50,7 @@ public class square_matrix_multiplication {
     		{11, 8}
     		};
     
-    int[][] actual = solution(a, b);
+    int[][] actual = dotProduct(a, b);
     compare(actual, expected, "CASE 1");
   }
 	
@@ -72,7 +72,7 @@ public class square_matrix_multiplication {
 					{ 4, 12 } 
 					};
 
-			int[][] actual = solution(a, b);
+			int[][] actual = dotProduct(a, b);
 			compare(actual, expected, "CASE 2");
 		}
 
@@ -93,7 +93,7 @@ public class square_matrix_multiplication {
 					{ 28, 31, 31 }, 
 					{ 26, 33, 31 } };
 
-			int[][] actual = solution(a, b);
+			int[][] actual = dotProduct(a, b);
 			compare(actual, expected, "CASE 3");
 		}
 	}

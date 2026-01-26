@@ -9,13 +9,6 @@ import math
    Use the Pythagorean Theorem:
 
        hypotenuse = sqrt(a² + b²)
-
-   Steps:
-   
-Square both input values.
-Add the squared values together.
-Take the square root of the result.
-Return the final value.
 """
 
 def find_hypothenus(a_sqr, b_sqr):

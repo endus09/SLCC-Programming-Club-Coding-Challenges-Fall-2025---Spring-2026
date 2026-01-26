@@ -1,6 +1,4 @@
-package org.example;
-
-public class Main {
+public class TranslateMessage {
   /**
    * Translate an encoded message into proper English.
    * Replace underscores with spaces.

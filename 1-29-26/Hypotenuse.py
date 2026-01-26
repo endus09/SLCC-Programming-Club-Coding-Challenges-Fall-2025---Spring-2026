@@ -1,7 +1,5 @@
 # AUTHOR: Jose
 
-import math
-
 """
    This function finds the length of the hypotenuse of a right triangle.
 

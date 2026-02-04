@@ -60,4 +60,4 @@ if door_1 and door_2:
         print("--- STAGE 2 FAILED ---")
 else:
     print("--- STAGE 1 FAILED ---")
-the map didin't keep the indentation unfortunately
+

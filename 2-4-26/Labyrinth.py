@@ -16,7 +16,7 @@ If all stages pass, you successfully escape the labyrinth.
 
 --MAP-- ( I tried my best )
 
-Visit: _ For visualization of map
+Visit: https://github.com/endus09/SLCC-Programming-Club-Coding-Challenges-Fall-2025---Spring-2026/tree/main/2-4-26 For visualization of map
 
 __
 

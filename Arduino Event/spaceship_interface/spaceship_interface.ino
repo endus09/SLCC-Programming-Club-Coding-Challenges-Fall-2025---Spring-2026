@@ -22,10 +22,10 @@ void loop() {
       digitalWrite(4, LOW);
       digitalWrite(5, HIGH);
 
-      delay(1000);
+      delay(250);
 
       digitalWrite(4, HIGH);
       digitalWrite(5, LOW);
-      delay(1000);
+      delay(250);
     }
 }

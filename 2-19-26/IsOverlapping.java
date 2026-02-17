@@ -10,7 +10,7 @@ public class IsOverlapping {
   }
 
   /**
-   * Returns true if the rectangles are Overlapping.
+   * Returns true if the circles are Overlapping.
    * Hint: Have you heard of the distance formula?
    * Bonus Challange: Don't use Square Root
    */

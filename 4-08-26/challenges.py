@@ -81,3 +81,60 @@ def print_string_in_frame(words: list):
 
 # UNCOMMENT WHEN YOU ARE READY FOR TESTING
 # print_string_in_frame(["Hello", "world", "in", "frame"])
+
+
+
+# given a sentence string, separate the words into a list and return
+def store_words_from_sentence(sentence: str):
+    # Return List
+    return
+
+# UNCOMMENT WHEN YOU ARE READY FOR TESTING
+#list_sentence_one = "The duck flew far away into the sunset, why? because he duck"
+#list_sentence_two = "Where did all my crayons go steven? Stop eating them"
+#list_sentence_three = "lee looo laaa liii luuu ,,,,,, elemeo uuuuu"
+
+#print(f'Sentence: \"{list_sentence_one}\" \n'
+#      f'Product: {store_words_from_sentence(list_sentence_one)}\n')
+#print(f'Sentence: \"{list_sentence_two}\" \n'
+#      f'Product: {store_words_from_sentence(list_sentence_two)}\n')
+#print(f'Sentence: \"{list_sentence_three}\" \n'
+#      f'Product: {store_words_from_sentence(list_sentence_three)}\n')
+
+
+
+# given a sentence string, find how many periods there are and return the amount
+def find_periods_in_sentence(sentence: str):
+    # Return how many periods there is in each sentence
+    return 0
+
+# UNCOMMENT WHEN YOU ARE READY FOR TESTING
+#periods_sentence_one = "www.google.com"
+#periods_sentence_two = "no way, there isn't any? "
+#periods_sentence_three = "... . . ... .. .. .. .... is that enough? maybe..."
+
+#print(f'Sentence: \"{periods_sentence_one}\" \n'
+#      f'Should return 2 -- Returns: {find_periods_in_sentence(periods_sentence_one)}\n')
+#print(f'Sentence: \"{periods_sentence_two}\" \n'
+#      f'Should return 0 -- Returns: {find_periods_in_sentence(periods_sentence_two)}\n')
+#print(f'Sentence: \"{periods_sentence_three}\" \n'
+#      f'Should return 21 -- Returns: {find_periods_in_sentence(periods_sentence_three)}\n')
+
+
+
+# given a sentence string, return every five-letter word however you see fit
+def print_every_five_letter_word(sentence: str):
+    # Return every five-letter word
+    return
+
+# UNCOMMENT WHEN YOU ARE READY FOR TESTING
+#five_letter_word_sentence_one = "water plus melon is watermelon, maybe we arent doomed after all"
+#five_letter_word_sentence_two = "after all this hard work, all that i have to show is my draft"
+#five_letter_word_sentence_three = "no pickles in the pickle jar? what the"
+
+#print(f'Sentence: \"{five_letter_word_sentence_one}\" \n'
+#      f'Should Return "water melon maybe arent after" -- Returns: {print_every_five_letter_word(five_letter_word_sentence_one)}\n')
+#print(f'Sentence: \"{five_letter_word_sentence_two}\" \n'
+#      f'Should Return "after draft" -- Returns: {print_every_five_letter_word(five_letter_word_sentence_two)}\n')
+#print(f'Sentence: \"{five_letter_word_sentence_three}\" \n'
+#      f'Should Return "" -- Returns: {print_every_five_letter_word(five_letter_word_sentence_three)}\n')
